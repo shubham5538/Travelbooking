@@ -1,4 +1,4 @@
-{
+{ "homepage": "https://shubham5538.github.io/Travelbooking",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
